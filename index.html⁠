@@ -3,5 +3,11 @@
 <body>
     <h1>Forbindelse OK!</h1>
     <p>Hvis du kan læse dette, virker Vercel-forbindelsen.</p>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+      }
+    </script>
 </body>
 </html>
